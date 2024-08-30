@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href='style1.css'/>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-image: linear-gradient(to right, #0b0c10, #324359);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #1f2833;
+            padding: 10px;
+        }
+        .navbar a {
+            color: #66fcf1;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #45a29e;
+            color: #0b0c10;
+            border-radius: 4px;
+        }
+        .intro {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .intro-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .intro img {
+            width: 600px; /* Adjusted image size */
+            height: 600px;
+            border-radius: 8px; /* Keeps the image shape as rectangle */
+            margin-left: auto; /* Pushes the image to the right */
+        }
+        h1 {
+            color: #66fcf1;
+        }
+        h3 {
+            font-size: 20px;
+            text-align: justify;
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #66fcf1;
+        }
+        h2 {
+            font-size: 24px;
+            color: #45a29e;
+            margin-bottom: 10px;
+        }
+        ul {
+            font-size: 18px;
+            color: white;
+            line-height: 1.6;
+            margin-left: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            width: 80%;
+        }
+        p {
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 40px;
+            line-height: 1.6;
+            width: 80%;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #45a29e;
+            color: white;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #1f2833;
+            color: #c5c6c7;
+        }
+        .contact-form {
+            width: 48%;
+            padding: 10px;
+            background-color: #1f2833;
+            border-radius: 8px;
+        }
+        .contact-form h2 {
+            margin-bottom: 10px;
+            color: #66fcf1;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #c5c6c7;
+        }
+        .contact-form input {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #c5c6c7;
+            color: #0b0c10;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #45a29e;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 50%;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #66fcf1;
+        }
+        .contact-details {
+            width: 48%;
+            padding: 10px;
+            background-color: #1f2833;
+            border-radius: 8px;
+        }
+        .contact-details h2 {
+            margin-bottom: 10px;
+            color: #66fcf1;
+        }
+        .contact-details p {
+            margin: 5px 0;
+            color: #c5c6c7;
+        }
+        .contact-details a {
+            color: #66fcf1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-details a:hover {
+            color: #45a29e;
+        }
+        section {
+            padding: 20px 0;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#internship">Internship</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div id="home" class="intro">
+        <div class="intro-text">
+            <h1>Hello, I'm Shruti Sajan.</h1>
+            <h3>A final year computer science student with a strong foundation in HTML, CSS, JavaScript, Python, Flask, and C aspiring to be a software engineer.</h3>
+        </div>
+        <img src="computer_portfolio.jpg" alt="Shruti Sajan">
+    </div>
+
+    <section id="internship">
+        <h2>Internship Experiences</h2>
+        <ul>
+            <li>Embedded Systems and Robotics | Techmaghi | 5 days | May 2023</li>
+            <li>Machine Learning Program | Rinex | Cognizance IIT Roorkee | May June 2022</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Summio: Youtube Transcript Summarizer | Mini Project | Provides the user the transcript of the given link, its summary, and its translated versions | Technologies Used: HTML, CSS, JavaScript, Flask | February 2024-May 2024</p>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Infosys Springboard | Introduction to Artificial Intelligence | Introduction to Deep Learning | Introduction to Data Science | Introduction to Natural Language Processing | Computer Vision 101 | August 2024</li>
+            <li>Google Cloud | Level 3: GenAIus Registries | Develop GenAI Apps with Gemini and Streamlit | Prompt Design in Vertex AI | May 2024</li>
+            <li>Udemy | Learn Flask, A Web Development Framework of Python | May 2024</li>
+            <li>NPTEL Elite Certificate | The Joy Of Computing Using Python | April 2024</li>
+            <li>Coursera | Google CyberSecurity Certificate | April 2024</li>
+            <li>GDSC AJCE | Google Cloud Study Jams | November 2023</li>
+            <li>Oracle Academy | Database Foundations | May 2023</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Board/University</th>
+                    <th>Year of Completion</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bachelor of Technology in Computer Science</td>
+                    <td>Amal Jyothi College of Engineering</td>
+                    <td>APJ Abdul Kalam University</td>
+                    <td>2021-2025</td>
+                    <td>83%</td>
+                </tr>
+                <tr>
+                    <td>Higher Secondary (Class 12)</td>
+                    <td>The Indian School, Bahrain</td>
+                    <td>CBSE</td>
+                    <td>2021</td>
+                    <td>94%</td>
+                </tr>
+                <tr>
+                    <td>Secondary (Class 10)</td>
+                    <td>The Indian School, Bahrain</td>
+                    <td>CBSE</td>
+                    <td>2019</td>
+                    <td>95%</td>
+                </tr>
+            </tbody>
+        </table>
+   
+    </section>
+
+    <section id="community">
+        <h2>Community Engagement</h2>
+        <ul>
+            <li>NextGuard Volunteer | 2022-Present</li>
+            <li>Member | IEEE (2023)</li>
+            <li>ACM (2022-Present)</li>
+            <li>GDSC (2022-Present)</li>
+            <li>Volunteered in GDSC Management Team | 2023-2024</li>
+            <li>Volunteered in Open House | Technical event by IEDC, AJCE | 2022</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <div class="footer-container">
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="contact-details">
+                <h2>Get in Touch</h2>
+                <p>Phone: +919747059528</p>
+                <p>Email: <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrLTbMhsbmkLtZMMzFDFFxtGMCDLHKMppNCZBQbwLNnQVxtbXcKhgmzPQJmXpXnBZwnvV">shrutisajan2003@gmail.com</a></p>
+                <p>LinkedIn: <a href="www.linkedin.com/in/shruti-sajan11102003" target="_blank">www.linkedin.com/in/shruti-sajan11102003</a></p>
+                <p>Location: Mallappally, Pathanamthitta</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+
+
+
+
